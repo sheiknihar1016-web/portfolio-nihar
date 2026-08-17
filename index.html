@@ -72,6 +72,7 @@
     }
     .nav-cta:hover { box-shadow: 0 0 24px rgba(229,57,53,.38) !important; transform: translateY(-1px); background: rgba(0,0,0,0) !important; }
     #hamburger { display: none; background: none; border: 1px solid rgba(229,57,53,.25); border-radius: .5rem; padding: .4rem .6rem; cursor: pointer; color: var(--gold); }
+    .mobile-download { display: none; padding: .4rem; color: var(--gold); }
     .mobile-nav { display: none; position: fixed; top: 4rem; left: 0; right: 0; z-index: 49; background: rgba(8,8,7,.97); backdrop-filter: blur(20px); border-bottom: 1px solid rgba(229,57,53,.12); padding: 1.25rem 2rem; flex-direction: column; gap: .5rem; }
     .mobile-nav.open { display: flex; }
     .mobile-nav a { color: var(--txt-secondary); text-decoration: none; font-size: .9rem; padding: .6rem 0; border-bottom: 1px solid rgba(229,57,53,.07); }
@@ -374,7 +375,7 @@
     @media(max-width:900px){
       nav#main-nav { padding: .85rem 1.5rem; }
       .nav-links { display: none; }
-      #hamburger { display: flex; align-items: center; justify-content: center; }
+      #hamburger, .mobile-download { display: flex; align-items: center; justify-content: center; }
       #hero { padding: 5rem 1.5rem 3rem; }
       .hero-grid { grid-template-columns: 1fr; gap: 3rem; }
       .hero-right { display: none; }
@@ -442,12 +443,17 @@
     <li><a href="Nihar_Ahamed_S_Resume.docx" download class="nav-cta">Resume <svg style="display:inline; width:12px; height:12px; margin-left:4px;" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg></a></li>
   </ul>
 
-  <!-- Hamburger -->
-  <button id="hamburger" aria-label="Menu">
-    <svg width="20" height="20" fill="none" stroke="var(--gold)" stroke-width="2" viewBox="0 0 24 24">
-      <path stroke-linecap="round" d="M4 6h16M4 12h16M4 18h16"/>
-    </svg>
-  </button>
+  <!-- Hamburger & Mobile Download -->
+  <div style="display:flex; align-items:center; gap:.5rem;">
+    <a href="Nihar_Ahamed_S_Resume.docx" download class="mobile-download" aria-label="Download Resume">
+      <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
+    </a>
+    <button id="hamburger" aria-label="Menu">
+      <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+        <path stroke-linecap="round" d="M4 6h16M4 12h16M4 18h16"/>
+      </svg>
+    </button>
+  </div>
 </nav>
 
 <!-- Mobile nav -->
@@ -459,6 +465,7 @@
   <a href="#experience">Experience</a>
   <a href="#education">Education</a>
   <a href="#contact">Contact</a>
+  <a href="Nihar_Ahamed_S_Resume.docx" download style="color:var(--gold);font-weight:700;">Download Resume</a>
 </div>
 
 <!-- ═══════════════════════════════════════════════════════════
