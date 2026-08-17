@@ -541,17 +541,9 @@
         <div class="particle p4"></div>
         <!-- Center Avatar -->
         <div class="orbit-center">
-          <div class="orbit-avatar">
-            <svg viewBox="0 0 22 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <defs>
-                <linearGradient id="avG" x1="0" y1="0" x2="22" y2="24" gradientUnits="userSpaceOnUse">
-                  <stop offset="0%" stop-color="var(--gold-light)"/>
-                  <stop offset="55%" stop-color="var(--gold)"/>
-                  <stop offset="100%" stop-color="var(--gold-dim)"/>
-                </linearGradient>
-              </defs>
-              <path d="M3 2 L3 22 M3 2 L19 22 M19 2 L19 22" stroke="url(#avG)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
+          <div class="orbit-avatar" style="overflow:hidden;">
+            <!-- Profile Photo - Adjust object-position to tweak alignment (e.g., center top, 50% 20%, etc) -->
+            <img src="profile.jpg" alt="Profile" style="width:100%; height:100%; object-fit:cover; object-position:center top;">
           </div>
         </div>
         <!-- Floating Labels -->
