@@ -489,7 +489,7 @@ function initNeuralLab() {
 
     setTimeout(() => {
       scanning = false;
-      btn.innerHTML = '▶ RESTART SCAN';
+      btn.innerHTML = ' RESTART SCAN';
       btn.style.opacity = '1';
       scanLine.style.transition = 'none';
       scanLine.style.top = '-10px';
