@@ -10,26 +10,26 @@
   --font-sans: 'Plus Jakarta Sans', sans-serif;
   --font-mono: 'JetBrains Mono', monospace;
 
-  /* ─── Gold Luxury Palette (High Contrast) ─── */
-  --gold:          #f5b041;
-  --gold-light:    #f8c471;
-  --gold-dim:      #d68910;
-  --gold-glow:     rgba(245, 176, 65, 0.22);
-  --gold-glow-lg:  rgba(245, 176, 65, 0.10);
-  --gold-border:   rgba(245, 176, 65, 0.25);
-  --gold-border-h: rgba(245, 176, 65, 0.55);
+  /* ─── Gold Luxury Palette (Bright) ─── */
+  --gold:          #e69a0a;
+  --gold-light:    #f5b041;
+  --gold-dim:      #c38309;
+  --gold-glow:     rgba(230, 154, 10, 0.15);
+  --gold-glow-lg:  rgba(230, 154, 10, 0.08);
+  --gold-border:   rgba(230, 154, 10, 0.25);
+  --gold-border-h: rgba(230, 154, 10, 0.55);
 
-  /* ─── Background Layers (Brighter Dark Theme) ─── */
-  --bg-base:   #111111;
-  --bg-tier1:  #1a1a1a;
-  --bg-tier2:  #222222;
-  --bg-tier3:  #2a2a2a;
-  --bg-card:   #1f1f1f;
+  /* ─── Background Layers (Light Theme) ─── */
+  --bg-base:   #f8fafc;
+  --bg-tier1:  #ffffff;
+  --bg-tier2:  #f1f5f9;
+  --bg-tier3:  #e2e8f0;
+  --bg-card:   #ffffff;
 
-  /* ─── Text Scale (Higher Contrast) ─── */
-  --txt-primary:   #ffffff;
-  --txt-secondary: #e0e0e0;
-  --txt-muted:     #a3a3a3;
+  /* ─── Text Scale (Dark on Light) ─── */
+  --txt-primary:   #0f172a;
+  --txt-secondary: #334155;
+  --txt-muted:     #64748b;
 
   /* ─── Misc ─── */
   --red:  #e74c3c;
@@ -71,7 +71,7 @@ body { overflow-x: hidden; line-height: 1.65; }
 
 /* ─── Technical dot-grid overlay ────────────────── */
 .dot-grid {
-  background-image: radial-gradient(circle, rgba(212,175,55,.08) 1px, transparent 1px);
+  background-image: radial-gradient(circle, rgba(245,176,65,.08) 1px, transparent 1px);
   background-size: 36px 36px;
 }
 
@@ -80,8 +80,8 @@ body { overflow-x: hidden; line-height: 1.65; }
   .custom-cursor {
     width: 32px; height: 32px;
     transform: translate(-50%,-50%);
-    border: 1.5px solid rgba(212,175,55,.45);
-    box-shadow: 0 0 18px rgba(212,175,55,.18);
+    border: 1.5px solid rgba(245,176,65,.45);
+    box-shadow: 0 0 18px rgba(245,176,65,.18);
     border-radius: 9999px;
   }
   .custom-cursor-dot {
@@ -97,8 +97,8 @@ body { overflow-x: hidden; line-height: 1.65; }
 
 /* ─── Header ─────────────────────────────────────── */
 header {
-  border-bottom: 1px solid rgba(212,175,55,.12);
-  background: rgba(8,8,7,.85);
+  border-bottom: 1px solid rgba(245,176,65,.12);
+  background: rgba(255,255,255,.85);
   backdrop-filter: blur(20px);
 }
 
@@ -114,7 +114,7 @@ header {
 }
 .nav-link:hover, .nav-link.active {
   color: var(--gold);
-  background: rgba(212,175,55,.07);
+  background: rgba(245,176,65,.07);
 }
 
 /* ─── Buttons ────────────────────────────────────── */
@@ -133,19 +133,19 @@ header {
   align-items: center;
   gap: .5rem;
   padding: .85rem 1.5rem;
-  box-shadow: 0 0 28px rgba(212,175,55,.25), inset 0 1px 0 rgba(255,255,255,.2);
+  box-shadow: 0 0 28px rgba(245,176,65,.25), inset 0 1px 0 rgba(255,255,255,.2);
   transition: all .25s var(--ease-spring);
 }
 .btn-primary:hover {
   transform: translateY(-2px);
-  box-shadow: 0 6px 32px rgba(212,175,55,.38), inset 0 1px 0 rgba(255,255,255,.2);
+  box-shadow: 0 6px 32px rgba(245,176,65,.38), inset 0 1px 0 rgba(255,255,255,.2);
 }
 
 .btn-secondary {
   font-family: var(--font-mono);
   font-size: .7rem;
-  border: 1px solid rgba(212,175,55,.25);
-  background: rgba(212,175,55,.04);
+  border: 1px solid rgba(245,176,65,.25);
+  background: rgba(245,176,65,.04);
   color: var(--txt-secondary);
   border-radius: .75rem;
   padding: .85rem 1.5rem;
@@ -157,16 +157,16 @@ header {
   transition: all .2s ease;
 }
 .btn-secondary:hover {
-  border-color: rgba(212,175,55,.55);
+  border-color: rgba(245,176,65,.55);
   color: var(--gold);
   transform: translateY(-2px);
-  background: rgba(212,175,55,.08);
+  background: rgba(245,176,65,.08);
 }
 
 .quick-copy {
   font-family: var(--font-mono);
   font-size: .7rem;
-  border: 1px dashed rgba(212,175,55,.22);
+  border: 1px dashed rgba(245,176,65,.22);
   background: transparent;
   color: var(--txt-muted);
   border-radius: .75rem;
@@ -180,7 +180,7 @@ header {
 .quick-copy:hover {
   border-color: var(--gold);
   color: var(--gold);
-  background: rgba(212,175,55,.05);
+  background: rgba(245,176,65,.05);
 }
 
 /* ─── Status badge ───────────────────────────────── */
@@ -190,8 +190,8 @@ header {
   gap: .625rem;
   padding: .45rem 1rem .45rem .75rem;
   border-radius: 9999px;
-  border: 1px solid rgba(212,175,55,.28);
-  background: rgba(212,175,55,.06);
+  border: 1px solid rgba(245,176,65,.28);
+  background: rgba(245,176,65,.06);
   backdrop-filter: blur(8px);
   font-family: var(--font-mono);
   font-size: .68rem;
@@ -203,15 +203,15 @@ header {
 /* ─── Stat cards ─────────────────────────────────── */
 .stat-card {
   background: var(--bg-card);
-  border: 1px solid rgba(212,175,55,.15);
+  border: 1px solid rgba(245,176,65,.15);
   border-radius: 1rem;
   padding: 1.25rem;
   transition: all .3s var(--ease-spring);
 }
 .stat-card:hover {
-  border-color: rgba(212,175,55,.42);
+  border-color: rgba(245,176,65,.42);
   transform: translateY(-3px);
-  box-shadow: 0 12px 32px rgba(0,0,0,.5), 0 0 20px rgba(212,175,55,.08);
+  box-shadow: 0 12px 32px rgba(15,23,42,.08), 0 0 20px rgba(245,176,65,.08);
 }
 
 /* ─── Feature boxes / cards ──────────────────────── */
@@ -220,13 +220,13 @@ header {
 }
 .feature-box:hover, .timeline-card:hover, .contact-card:hover {
   transform: translateY(-3px);
-  box-shadow: 0 14px 36px -8px rgba(0,0,0,.65), 0 0 18px rgba(212,175,55,.06);
+  box-shadow: 0 14px 36px -8px rgba(15,23,42,.08), 0 0 18px rgba(245,176,65,.06);
 }
 
 /* ─── Project cards ──────────────────────────────── */
 .project-card {
   background: var(--bg-card);
-  border: 1px solid rgba(212,175,55,.13);
+  border: 1px solid rgba(245,176,65,.13);
   transition: transform .3s var(--ease-spring), border-color .3s ease, box-shadow .3s ease;
   position: relative;
   overflow: hidden;
@@ -235,21 +235,21 @@ header {
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(135deg, rgba(212,175,55,.04) 0%, transparent 60%);
+  background: linear-gradient(135deg, rgba(245,176,65,.04) 0%, transparent 60%);
   opacity: 0;
   transition: opacity .3s ease;
 }
 .project-card:hover {
-  border-color: rgba(212,175,55,.45);
+  border-color: rgba(245,176,65,.45);
   transform: translateY(-5px);
-  box-shadow: 0 24px 48px -12px rgba(0,0,0,.8), 0 0 24px rgba(212,175,55,.1);
+  box-shadow: 0 24px 48px -12px rgba(15,23,42,.1), 0 0 24px rgba(245,176,65,.1);
 }
 .project-card:hover::before { opacity: 1; }
 
 /* ─── Gold divider line ──────────────────────────── */
 .gold-divider {
   height: 1px;
-  background: linear-gradient(90deg, transparent, rgba(212,175,55,.35), transparent);
+  background: linear-gradient(90deg, transparent, rgba(245,176,65,.35), transparent);
   border: none;
 }
 
@@ -261,7 +261,7 @@ header {
   font-size: .7rem;
   color: var(--txt-secondary);
   background: var(--bg-tier3);
-  border: 1px solid rgba(212,175,55,.14);
+  border: 1px solid rgba(245,176,65,.14);
   border-radius: .5rem;
   transition: all .2s ease;
 }
@@ -269,11 +269,11 @@ header {
   border-color: var(--gold);
   color: var(--gold-light);
   transform: translateY(-1px);
-  background: rgba(212,175,55,.06);
+  background: rgba(245,176,65,.06);
 }
 .skill-pill.highlight {
-  background: rgba(212,175,55,.08);
-  border-color: rgba(212,175,55,.32);
+  background: rgba(245,176,65,.08);
+  border-color: rgba(245,176,65,.32);
   color: var(--gold-light);
 }
 
@@ -284,7 +284,7 @@ header {
   font-size: .68rem;
   padding: .35rem .85rem;
   border-radius: .5rem;
-  border: 1px solid rgba(212,175,55,.18);
+  border: 1px solid rgba(245,176,65,.18);
   background: var(--bg-tier3);
   color: var(--txt-muted);
   transition: all .2s ease;
@@ -299,7 +299,7 @@ header {
   color: #0a0a08;
   font-weight: 700;
   border-color: #d4af37;
-  box-shadow: 0 0 16px rgba(212,175,55,.3);
+  box-shadow: 0 0 16px rgba(245,176,65,.3);
 }
 
 /* ─── Tab switcher ───────────────────────────────── */
@@ -315,7 +315,7 @@ header {
   transition: all .2s ease;
 }
 .tab-btn.active {
-  background: rgba(212,175,55,.1);
+  background: rgba(245,176,65,.1);
   color: var(--gold);
   font-weight: 700;
   box-shadow: inset 0 -2px 0 var(--gold);
@@ -323,7 +323,7 @@ header {
 
 /* ─── PCB Scanner ────────────────────────────────── */
 .pcb-sandbox {
-  box-shadow: inset 0 0 60px rgba(0,0,0,.9);
+  box-shadow: inset 0 0 60px rgba(15,23,42,.1);
 }
 @keyframes scanLine {
   0%   { top: 0%; opacity: .15; }
@@ -356,14 +356,14 @@ header {
 
 .modal-card {
   background: var(--bg-tier2);
-  border: 1px solid rgba(212,175,55,.22);
-  box-shadow: 0 32px 80px rgba(0,0,0,.85), 0 0 40px rgba(212,175,55,.08);
+  border: 1px solid rgba(245,176,65,.22);
+  box-shadow: 0 32px 80px rgba(15,23,42,.1), 0 0 40px rgba(245,176,65,.08);
 }
 
 /* ─── Scrollbar ──────────────────────────────────── */
 ::-webkit-scrollbar { width: 5px; height: 5px; }
 ::-webkit-scrollbar-track { background: var(--bg-base); }
-::-webkit-scrollbar-thumb { background: rgba(212,175,55,.28); border-radius: 4px; }
+::-webkit-scrollbar-thumb { background: rgba(245,176,65,.28); border-radius: 4px; }
 ::-webkit-scrollbar-thumb:hover { background: var(--gold); }
 
 /* ─── Animations ─────────────────────────────────── */
@@ -387,8 +387,8 @@ header {
 
 /* ─── Gold glow ping ─────────────────────────────── */
 @keyframes goldPulse {
-  0%, 100% { box-shadow: 0 0 0 0 rgba(212,175,55,.5); }
-  50%      { box-shadow: 0 0 0 6px rgba(212,175,55,0); }
+  0%, 100% { box-shadow: 0 0 0 0 rgba(245,176,65,.5); }
+  50%      { box-shadow: 0 0 0 6px rgba(245,176,65,0); }
 }
 .gold-ping { animation: goldPulse 2s ease infinite; }
 
@@ -408,14 +408,14 @@ header {
 /* ─── Stack box ──────────────────────────────────── */
 .stack-box {
   background: var(--bg-tier1);
-  border: 1px solid rgba(212,175,55,.13);
+  border: 1px solid rgba(245,176,65,.13);
   border-radius: 1.25rem;
   transition: all .3s var(--ease-spring);
 }
 .stack-box:hover {
-  border-color: rgba(212,175,55,.38);
+  border-color: rgba(245,176,65,.38);
   transform: translateY(-4px);
-  box-shadow: 0 16px 40px rgba(0,0,0,.55), 0 0 20px rgba(212,175,55,.07);
+  box-shadow: 0 16px 40px rgba(15,23,42,.08), 0 0 20px rgba(245,176,65,.07);
 }
 
 /* ─── Gold horizontal bar ────────────────────────── */
