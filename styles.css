@@ -10,29 +10,29 @@
   --font-sans: 'Plus Jakarta Sans', sans-serif;
   --font-mono: 'JetBrains Mono', monospace;
 
-  /* ─── Gold Luxury Palette ─── */
-  --gold:          #d4af37;
-  --gold-light:    #f5d76e;
-  --gold-dim:      #a8882a;
-  --gold-glow:     rgba(212,175,55,.22);
-  --gold-glow-lg:  rgba(212,175,55,.10);
-  --gold-border:   rgba(212,175,55,.25);
-  --gold-border-h: rgba(212,175,55,.55);
+  /* ─── Gold Luxury Palette (High Contrast) ─── */
+  --gold:          #f5b041;
+  --gold-light:    #f8c471;
+  --gold-dim:      #d68910;
+  --gold-glow:     rgba(245, 176, 65, 0.22);
+  --gold-glow-lg:  rgba(245, 176, 65, 0.10);
+  --gold-border:   rgba(245, 176, 65, 0.25);
+  --gold-border-h: rgba(245, 176, 65, 0.55);
 
-  /* ─── Background Layers ─── */
-  --bg-base:   #080807;
-  --bg-tier1:  #0e0e0c;
-  --bg-tier2:  #141410;
-  --bg-tier3:  #1c1c18;
-  --bg-card:   #111110;
+  /* ─── Background Layers (Brighter Dark Theme) ─── */
+  --bg-base:   #111111;
+  --bg-tier1:  #1a1a1a;
+  --bg-tier2:  #222222;
+  --bg-tier3:  #2a2a2a;
+  --bg-card:   #1f1f1f;
 
-  /* ─── Text Scale ─── */
-  --txt-primary:   #f0ede4;
-  --txt-secondary: #b8b49e;
-  --txt-muted:     #6b6857;
+  /* ─── Text Scale (Higher Contrast) ─── */
+  --txt-primary:   #ffffff;
+  --txt-secondary: #e0e0e0;
+  --txt-muted:     #a3a3a3;
 
   /* ─── Misc ─── */
-  --red:  #c0392b;
+  --red:  #e74c3c;
   --ease-spring: cubic-bezier(0.16,1,0.3,1);
 }
 
